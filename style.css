@@ -41,12 +41,14 @@
 .form-field__label {
   font-size: 1.4rem;
 }
-.form-field__input {
-  font-size: 1.4rem;
-  padding: 0.25em;
-}
 .form-field__error-message {
   margin-top: 0.25em;
+}
+
+.input-text {
+  font-size: 1.4rem;
+  padding: 0.25em;
+  width: 100%;
 }
 
 .error-message {
@@ -72,4 +74,16 @@
 }
 .progress-circle__label {
   font-size: 1.5rem;
+}
+
+.password-field {
+  position: relative;
+}
+.password-field__input {
+  width: 100%;
+}
+.password-field__icon {
+  position: absolute;
+  top: 30%;
+  left: 95%;
 }/*# sourceMappingURL=style.css.map */

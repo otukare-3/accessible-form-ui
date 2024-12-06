@@ -49,14 +49,15 @@ $base-font-size: 1.4rem;
     font-size: $base-font-size;
   }
 
-  &__input {
-    font-size: $base-font-size;
-    padding: 0.25em;
-  }
-
   &__error-message {
     margin-top: 0.25em;
   }
+}
+
+.input-text {
+  font-size: $base-font-size;
+  padding: 0.25em;
+  width: 100%;
 }
 
 .error-message {
@@ -83,5 +84,19 @@ $base-font-size: 1.4rem;
 
   &__label {
     font-size: 1.5rem;
+  }
+}
+
+.password-field {
+  position: relative;
+
+  &__input {
+    width: 100%;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 30%;
+    left: 95%;
   }
 }
