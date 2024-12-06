@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Form UI</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="full-name">Full Name</label>
+        <input id="full-name" name="full-name" type="text" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          aria-describedby="email-validation"
+          required
+        />
+        <span id="email-validation" aria-live="assertive"
+          >Email is already taken</span
+        >
+      </div>
+      <div>
+        <label for="enter-password">Enter Password</label>
+        <input id="enter-password" name="enter-password" type="password" />
+      </div>
+      <div>
+        <label for="confirm-password">Confirm Password</label>
+        <input id="confirm-password" name="confirm-password" type="password" />
+      </div>
+      <button type="submit">Update Profile</button>
+    </form>
+    <div>
+      <span>65%</span>
+    </div>
+    <div>
+      <span>Profile Completeness</span>
+    </div>
+    <ul>
+      <li><s>Create Account</s></li>
+      <li><s>Update Roadmap Progress</s></li>
+      <li><s>Setup Public Profile</s></li>
+      <li>Complete your first project</li>
+      <li>Invite your Friends</li>
+    </ul>
+  </body>
+</html>
